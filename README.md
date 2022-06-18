@@ -34,6 +34,16 @@
 # DISTRIBUTION OF GRAPHS
 ![App Screenshot](https://github.com/sukriti145/AGRI-PRODUCE-OPTIMIZATION-ENGINE/blob/screenshot/screenshot%20of%20graph.png?raw=true)
 ## From the distribution graph, we can see that some crops require a small amount of Nitrogen, some require average, and some require ## large amounts. Some crops require a small amount of Phosphorous, some require average, and some require large amounts. Some crops ## ## require a small amount of Potassium, some require average, and some require large amounts. Some crops require low Temperature, some ## require average, and some require high. Some crops require low Humidity in soil, some require average, and some require high. Some ## crops require low PH levels and some require high PH levels. Some crops require low Rain Fall, some require average, and some      ## require high
-
+# Machine Learning Model
+## First of all, we drop the label column from our data set as we don't need this.
+# Train-Test Split
+## In machine learning models, the trained model should perform well on unseen data. To simulate the new, unseen data, the available data is subjected to data splitting whereby it is split into 2 parts (sometimes referred to as the train-test split). Particularly, the first part is the larger data subset that is used as the training set (such as accounting for 80% of the original data) and the second is normally a smaller subset and used as the testing set (the remaining 20% of the data). And it is not fixed to divide data into 80 ratios 20, you can split it in any way or based on certain conditions.
+# Predictive Model
+## Then, I import Logistic Regression from sklearn.linear_model, fit my model, and make a predictive model.
+## Here, the code is not so complex but a question arises that why do we use Logistic Regression instead of Linear Regression?
+## That is because when we have to deal with continuous variables or we can say with numerical values we use linear regression but when we have to deal with categorical variables we use logistic regression . Here we are dealing with categorical variables that's why we used logistic regression.
+## logistic Regression is trying to map real values or independent data points in the interval from 0 to 1.
+## Points below the cut off line belong to Class B and points above the cut off line belongs to class A
+## Points in class A have the probability of a certain occurrence on the other hand points in class B have no probability of a certain occurrence.
 
 
